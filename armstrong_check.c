@@ -22,7 +22,7 @@ int main()
     while (temp2 != 0)
     {
         int mod = temp2 % 10;
-        num2 = num2 + pow(mod, n);
+        num2 += pow(mod, n);
         temp2 /= 10;
     }
 
