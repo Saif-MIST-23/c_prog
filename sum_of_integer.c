@@ -3,7 +3,7 @@ int main()
 {
     int a, r;
     int sum=0;           
-    printf("input a numb to reverse: ");
+    printf("input a numb to sum all digit: ");
     scanf("%d", &a);
     while (a != 0)
     {

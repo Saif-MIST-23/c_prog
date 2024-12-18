@@ -9,7 +9,7 @@ for armstrong,have to understand,
 int main()
 {
     int num1, num2 = 0, n = 0;
-    printf("input a numb to find armstrong: ");
+    printf("input a numb to check armstrong: ");
     scanf("%d", &num1);
 
     int temp1 = num1, temp2 = num1;

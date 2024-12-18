@@ -7,7 +7,7 @@ for palindrome,have to understand,
 int main()
 {
     int a, r,num1,num2=0;
-    printf("input a numb to reverse: ");
+    printf("input a numb to check palindrome: ");
     scanf("%d", &a);
     num1=a;
 

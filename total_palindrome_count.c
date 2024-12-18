@@ -5,7 +5,7 @@ for palindrome count,have to understand,
 #include <stdio.h>
 int main()
 {
-    int initial_value, final_value;
+    int initial_value, final_value,m=0;
     printf("input initial_value range to find armstrong: ");
     scanf("%d", &initial_value);
     printf("input final range to find armstrong: ");
@@ -24,7 +24,10 @@ int main()
         }
         if (initial_value == num2)
         {
-            printf("the palindrome number is = %d \n", initial_value);
+            printf("%d.the palindrome number is = %d \n", m+1,initial_value);
+            m++;
         }
     }
+    printf("total : %d",m);
+
 }

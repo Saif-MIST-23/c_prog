@@ -9,7 +9,7 @@ for armstrong,have to understand,
 #include <math.h>
 int main()
 {
-    int initial_value, final_value;
+    int initial_value, final_value,m=0;
     printf("input initial_value range to find armstrong: ");
     scanf("%d", &initial_value);
     printf("input final range to find armstrong: ");
@@ -35,6 +35,8 @@ int main()
         if (initial_value == num)
         {
             printf("the armstrong number is = %d \n", initial_value);
+            m++;
         }
     }
+    printf("total : %d",m);
 }

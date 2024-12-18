@@ -8,7 +8,7 @@ for strong check,have to understand,
 int main()
 {
     int a, r, num1, num2 = 0, fac = 1;
-    printf("input a numb to find strong: ");
+    printf("input a numb to check strong: ");
     scanf("%d", &a);
     num1 = a;
 
