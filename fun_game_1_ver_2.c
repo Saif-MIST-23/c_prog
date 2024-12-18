@@ -71,11 +71,14 @@ int main()
                     printf("\n%s=%d\n%s=%d", player_1, m, player_2, n);
                     if (m > n)
                     {
-                        printf("\n%s win the match", player_1);
+                        printf("\n%s win the match\n", player_1);
                     }
-                    else
+                    else if(n>m)
                     {
-                        printf("\n%s win the match", player_2);
+                        printf("\n%s win the match\n", player_2);
+                    }else
+                    {
+                        printf("\nmatch draw\n");
                     }
                     break;
                 }
