@@ -4,12 +4,15 @@
 
 int main()
 {
-    int t_player, tot_round, curr_round = 1, i, p_guess,temp1,NoOne=0;
+    int t_player, tot_round, curr_round = 1, i, p_guess,temp1,NoOne=0,range_define;
 
-    printf("total player: ");
-    scanf("%d", &t_player);
+    printf("input your highest range of number that you want to play: ");
+    scanf("%d", &range_define);
     printf("total round: ");
     scanf("%d", &tot_round);
+    printf("total player: ");
+    scanf("%d", &t_player);
+
 
     char players[t_player][100], score[t_player];
     printf("\nenter players name---\n");
@@ -28,12 +31,12 @@ int main()
     while (curr_round <= tot_round)
     {
         srand(time(0));
-        int c_guess = (rand() % 100) + 1;
+        int c_guess = (rand() % range_define) + 1;
 
         if(curr_round==tot_round) printf("\nREMINDER: The Last Round..........\n");
 
         printf("\nROUND = %d  \n", curr_round);
-        printf("\n------Guess Number from 0 to 100---------\n\n");
+        printf("\n------Guess Number from 0 to %d---------\n\n",range_define);
 
         do
         {
