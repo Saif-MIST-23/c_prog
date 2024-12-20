@@ -28,12 +28,12 @@ int main()
     while (curr_round <= tot_round)
     {
         srand(time(0));
-        int c_guess = (rand() % 3) + 1;
+        int c_guess = (rand() % 100) + 1;
 
         if(curr_round==tot_round) printf("\nREMINDER: The Last Round..........\n");
 
         printf("\nROUND = %d  \n", curr_round);
-        printf("\nguess a random number between 0 to 3\n\n");
+        printf("\n------Guess Number from 0 to 100---------\n\n");
 
         do
         {
